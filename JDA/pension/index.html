@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>RajSSP</title>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/emblem.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.backstretch.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/readmore.min.js"></script>
+		<script src="js/script.js"></script>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="images/emblem.png" style="width: 50px;" alt=""><span class="brand"><b>Finance Department</b><br> Government Of India <br><span id="ssp">Social Security Pension</span></span></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse" style=" z-index: 999 !important; position: relative;">
+					<ul class="nav navbar-nav navbar-right links">
+						<li><a href="index.html" class="hvr-fade">Home</a></li>
+						<li><a href="http://rajssp.raj.nic.in/HtmlPages/Schemes/Reports.aspx" class="hvr-fade">Reports</a></li>
+						<li><a href="http://rajssp.raj.nic.in/HtmlPages/Schemes/FlowDiagram.aspx" class="hvr-fade">Flow Diagram of Pension Schemes</a></li>
+					</ul>
+					<!-- <ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+					</ul> -->
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	<div class="container">
+		<div class="row">
+			<div class="form">
+				<label for="age">Enter Age : </label>
+				<input type="text" id="age" placeholder="Enter Age">
+				<br>
+				<label for="gender">Gender : </label>
+
+				<p id="gender"></p>
+
+				<label for="Male">Male</label>
+
+				<input type="radio"
+				name="male1"
+				value="male" 
+				id="Male" />
+				
+				<label for="Female">Female</label>
+				<input type="radio"
+				name="female1"
+				value="female" 
+				id="Female" />
+				<br>
+				<br>
+				
+				<p style="font-size: 18px; margin-left:10px;">Below Poverty Line ?</p>
+				<label for="yes_bpl">Yes</label>
+				<input type="radio"
+				name="YesBPL"
+				value="yes" 
+				id="yes_bpl" />
+
+				<label for="no_bpl" id="no">No</label>
+
+				<input type="radio"
+				name="NoBPL"
+				value="no" 
+				id="no_bpl" />
+				<br>
+				<br>
+				<button id="submit" style="margin-left: 10px;">Submit</button>
+			</div>
+			<table>
+	<tr>
+		<td>Enter your details</td>
+		<td>enter age</td>
+		<td>gender</td>
+	</tr>
+<tr>
+		<td>Below</td>
+		<td>radio</td>
+		<td></td>
+	</tr>
+		<tr>
+		<td colspan="3">submit btn</td>
+		
+	</tr>
+	
+
+</table>
+		</div>
+		<div class="row result hidden">
+			
+		</div>
+		<div class="row contact">
+			<p>Please visit the website : <a href="http://rajssp.raj.nic.in/LoginContent/MidLogin.aspx">RajSSC</a> if you are not availing any of the schemes you are elligible for.</p>
+		</div>
+	</div>
+		
+
+
+
+
+	</body>
+</html>
