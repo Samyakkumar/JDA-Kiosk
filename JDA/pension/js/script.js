@@ -133,7 +133,9 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 	document.querySelector(".result").innerHTML = result;
 	$("td").addClass(" scheme");
+	$("td:odd").addClass(" odd");
 	$("th").addClass(" scheme");
+	$("th").addClass(" heading");
 	});
 		
 

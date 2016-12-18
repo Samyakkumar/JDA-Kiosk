@@ -115,3 +115,13 @@ img{
 	margin-top:10px;
 	font-size: 16px;
 }
+.heading{
+	background-color: rgb(50, 77, 110);
+	color:white;
+	text-align: center;
+	font-size: 1.1em;
+}
+.odd{
+	background-color: rgb(247, 130, 0);
+	color:white;
+}
