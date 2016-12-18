@@ -54,7 +54,7 @@
 }
 .divopacity{
 	opacity: 1 !important;
-		font-weight: 600;
+	font-weight: 600;
 	transition-property:opacity;
 	transition-timing-function: ease-in;
 	transition-duration:0.3s;
@@ -123,6 +123,10 @@ img{
 }
 .odd{
 	background-color: rgb(247, 130, 0);
+	color:white;
+}
+.even{
+	background-color: rgb(135, 206, 250);
 	color:white;
 }
 .form{

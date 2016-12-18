@@ -60,6 +60,8 @@ document.addEventListener("DOMContentLoaded", function(event){
 		console.log(reply_gender_female);
 		console.log(age);
 		$(".result").removeClass("hidden");
+		$(".result").addClass(" divopacity");
+		$(".contact").addClass(" divopacity");
 		if (reply_gender_male === true && reply_bpl_yes === true){
 			if(age >= 60){
 				result += "<h1> You are eligible for the following schemes : </h1> <br>";
@@ -134,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	document.querySelector(".result").innerHTML = result;
 	$("td").addClass(" scheme");
 	$("td:odd").addClass(" odd");
+	$("td:even").addClass(" even");
 	$("th").addClass(" scheme");
 	$("th").addClass(" heading");
 	});
