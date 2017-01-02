@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OCR test</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+	 <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.6.1/dist/progressbar.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+            .progress {
+                height: 80px;
+                width: 80px;
+                margin: 50px auto;
+            }
+            .progress > svg {
+                height: 100%;
+                display: block;
+            }
+            @keyframes rotating {
+              from {
+                transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+              }
+              to {
+                transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+              }
+            }
+            @-webkit-keyframes rotating /* Safari and Chrome */ {
+              from {
+                transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+              }
+              to {
+                transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+              }
+            }
+            .rotating {
+              -webkit-animation: rotating 2s linear infinite;
+              -moz-animation: rotating 2s linear infinite;
+              -ms-animation: rotating 2s linear infinite;
+              -o-animation: rotating 2s linear infinite;
+              animation: rotating 2s linear infinite;
+              transform-origin: 50% 50%;
+            }
+            .label{
+            	width: 100%;
+            	color:black !important;
+            }
+        </style>
+</head>
+<body>
+<div>
+		<input type="text" id="name">
+			<label for="name">Enter Name of file</label>
+			<button id="submit">Submit</button>
+		<div id="addstuff">
+			
+		</div>
+		<div class="progress hidden">
+			
+		</div>
+		<div class="label hidden">
+			
+		</div>
+	<div id="result" class="hidden">
+		
+	</div>
+</div>
+</body>
+</html>
