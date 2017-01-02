@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 				})
 			}
 			var image = document.querySelector("#image");
-			apply(image);
+			// apply(image);
 			console.log(image);
 			setTimeout(function(){getOCR(image);} , 3000);
 
