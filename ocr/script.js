@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 					{
 						lang:'eng'
 					})
-					.progress(function  (p) { console.log('progress', p);  if(p.progress != 1){var stat = "<h4>" + p.status + "</h4>";}else{stat = "<h4>Complete!</h4>"; $(".progress").empty();}; circle.animate(p.progress); $(".label").html(stat); })
+					.progress(function  (p) { console.log('progress', p);  if(p.progress != 1){var stat = "<h4>" + p.status + "</h4>";}else{stat = "<h4>Complete!</h4>"; }; circle.animate(p.progress); $(".label").html(stat); })
 					.then(
 						function(result){
 							$("#result").removeClass("hidden");
