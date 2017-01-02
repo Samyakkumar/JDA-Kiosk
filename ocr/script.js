@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function(event){
 			var imgattr = "<img src='" + namefile + "' id='image' width='800px' height='800px'>";
 			console.log(imgattr);
 			$("#addstuff").html(imgattr);
-			function apply(image){
-				Caman.remoteProxy = Caman.IO.useProxy('php');
-				Caman("#image", function(){
-					this.contrast(50).brightness(-10).exposure(5).greyscale().render();
-				})
-			}
+			// function apply(image){
+			// 	Caman.remoteProxy = Caman.IO.useProxy('php');
+			// 	Caman("#image", function(){
+			// 		this.contrast(50).brightness(-10).exposure(5).greyscale().render();
+			// 	})
+			// }
 			var image = document.querySelector("#image");
 			// apply(image);
 			console.log(image);
