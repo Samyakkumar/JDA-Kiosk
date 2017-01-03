@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 								$("#result").append("<br><br><br>")
 								
 							}
-							setTimeout(function(){$(".progress").empty()} , 2000)
+							setTimeout(function(){$(".progress").empty()} , 10000)
 						}
 						)
 		}
