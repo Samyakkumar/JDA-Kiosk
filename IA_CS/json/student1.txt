@@ -1,0 +1,6 @@
+{y:6, label:"Computer Science"},
+{y:5, label:"Hindi"},
+{y:7, label:"English"},
+{y:3, label:"Math"},
+{y:1, label:"Physics"},
+
