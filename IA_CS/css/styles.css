@@ -1,0 +1,42 @@
+.form{
+    border: 1px solid;
+    border-color: #6C5B7B;
+    margin:25% 28% 0px 35%;
+    padding:15px;
+}
+#Submit{
+    box-shadow: none;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    /*border: none;*/
+    padding:5px 5px 5px 5px;
+    margin-left: 38%;
+}
+#Submit:hover, #Submit:focus{
+    border-color:white;
+    transition-duration: 500ms;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function:  ease-out;
+    -ms-transition-timing-function:  ease-out;
+    -o-transition-timing-function:  ease-out;
+    transition-timing-function:  ease-out;
+}
+input{
+    outline: none;
+}
+input:hover{
+    border-color:#F67280;
+    border-style: solid;
+    transition-duration: 500ms;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function:  ease-out;
+    -ms-transition-timing-function:  ease-out;
+    -o-transition-timing-function:  ease-out;
+    transition-timing-function:  ease-out;
+}
+.chart{
+    position: relative;
+    top:50%;
+    left:30%;
+}
