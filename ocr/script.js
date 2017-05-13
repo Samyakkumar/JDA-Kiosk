@@ -35,7 +35,8 @@ document.addEventListener("DOMContentLoaded", function(event){
     				circle.set(0.00);
 					Tesseract.recognize(image,
 					{
-						lang:'eng'
+						lang:'eng',
+						classify_font_name : '',
 					})
 					.progress(function  (p) { console.log('progress', p);  if(p.progress != 1){var stat = "<h4>" + p.status + "</h4>";}else{stat = "<h4>Complete!</h4>"; }; circle.animate(p.progress); $(".label").html(stat); })
 					.then(
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 								$("#result").append("Success");
 								$("#result").append(print);
 								$("#result").append("<br><br><br>")
-								
+
 							}
 							setTimeout(function(){$(".progress").empty()} , 10000)
 						}
